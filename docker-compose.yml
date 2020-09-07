@@ -1,0 +1,10 @@
+version: "3.4"
+
+services:
+  php:
+    image: php
+    build: .
+    ports:
+      - 80:80
+    volumes:
+      - ./Programs:/var/www/localhost/
